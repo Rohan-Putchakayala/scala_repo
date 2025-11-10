@@ -1,4 +1,4 @@
-object MapReduceFilter {
+object MapReduceFilterr {
   def main(args: Array[String]): Unit = {
     val nums = List(1, 2, 3, 4, 5)
     val squares = nums.map(x => x * x)
