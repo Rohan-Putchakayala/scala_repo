@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-kakfa-producer/kafka-producer-app.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-kakfa-producer/kafka-producer-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-kakfa-producer/kafka-producer-app.kafka-producer-app-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-kakfa-producer/kafka-producer-app.kafka-producer-app-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-kakfa-producer/kafka-producer-app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-kakfa-producer/kafka-producer-app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-kakfa-producer/kafka-producer-app.test.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-kakfa-producer/kafka-producer-app.test.iml" />
+    </modules>
+  </component>
+</project>
