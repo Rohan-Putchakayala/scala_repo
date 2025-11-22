@@ -1,0 +1,3 @@
+package models
+
+object Models {}
