@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "visitor-management-api",
+		"name": "Visitor Management System API",
+		"description": "Complete API collection for Visitor Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Check-In Visitor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "John Doe",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "john.doe@example.com",
+							"type": "text"
+						},
+						{
+							"key": "phoneNumber",
+							"value": "+1-555-123-4567",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "Acme Corp",
+							"type": "text"
+						},
+						{
+							"key": "purposeOfVisit",
+							"value": "Business Meeting",
+							"type": "text"
+						},
+						{
+							"key": "hostEmployeeEmail",
+							"value": "host@company.com",
+							"type": "text"
+						},
+						{
+							"key": "idProofNumber",
+							"value": "ID123456789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/visitors/check-in",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"visitors",
+						"check-in"
+					]
+				},
+				"description": "Check in a visitor with an ID reference number."
+			},
+			"response": []
+		},
+		{
+			"name": "Check-Out Visitor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/visitors/check-out/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"visitors",
+						"check-out",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1",
+							"description": "Check-in ID"
+						}
+					]
+				},
+				"description": "Check out a visitor by check-in ID"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Active Visitors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/visitors/active",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"visitors",
+						"active"
+					]
+				},
+				"description": "Get all currently checked-in visitors"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Visitor History",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/visitors/history/:email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"visitors",
+						"history",
+						":email"
+					],
+					"variable": [
+						{
+							"key": "email",
+							"value": "john.doe@example.com",
+							"description": "Visitor email address"
+						}
+					]
+				},
+				"description": "Get visitor history by email"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Visitor by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/visitors/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"visitors",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1",
+							"description": "Visitor ID"
+						}
+					]
+				},
+				"description": "Get visitor details by ID"
+			},
+			"response": []
+		}
+	]
+}
+

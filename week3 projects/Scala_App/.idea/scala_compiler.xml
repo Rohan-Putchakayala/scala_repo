@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <option name="separateProdTestSources" value="true" />
+    <profile name="sbt 1" modules="Scala_App,Scala_App.main,Scala_App.test,visitor-management-system,visitor-management-system.messaging-service,visitor-management-system.messaging-service.main,visitor-management-system.messaging-service.test,visitor-management-system.messagingService,visitor-management-system.messagingService.main,visitor-management-system.messagingService.test" />
+    <profile name="sbt 2" modules="visitor-management-system.main,visitor-management-system.test">
+      <option name="deprecationWarnings" value="true" />
+      <option name="uncheckedWarnings" value="true" />
+      <parameters>
+        <parameter value="-encoding" />
+        <parameter value="utf8" />
+      </parameters>
+    </profile>
+  </component>
+</project>
