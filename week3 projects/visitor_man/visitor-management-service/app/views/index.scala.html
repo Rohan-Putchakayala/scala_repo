@@ -1,0 +1,15 @@
+@()
+
+@main("Visitor Management Service") {
+  <h1>Visitor Management Service</h1>
+  <p>Combined visitor reception and processing service with direct Kafka publishing.</p>
+
+  <h2>API Endpoints</h2>
+  <ul>
+    <li><code>POST /api/visitors/checkin</code> - Check-in a visitor</li>
+    <li><code>POST /api/visitors/checkout/:id</code> - Check-out a visitor</li>
+    <li><code>GET /api/visitors/:id</code> - Get visitor details</li>
+    <li><code>GET /api/visits/active</code> - Get active visits</li>
+    <li><code>GET /health</code> - Health check</li>
+  </ul>
+}

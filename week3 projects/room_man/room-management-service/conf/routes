@@ -1,0 +1,19 @@
+# Room Management Service Routes
+
+# Reservation endpoints
+POST    /api/reservations                    controllers.ReservationController.createReservation
+GET     /api/reservations/availability       controllers.ReservationController.checkAvailability
+GET     /api/reservations/active             controllers.ReservationController.getActiveReservations
+
+# Room endpoints
+GET     /api/rooms                           controllers.ReservationController.getAllRooms
+
+# Administrative endpoints
+POST    /api/reservations/process-reminders      controllers.ReservationController.processReminders
+POST    /api/reservations/process-auto-releases  controllers.ReservationController.processAutoReleases
+
+# Health check endpoint
+GET     /health                              controllers.ReservationController.health
+
+# Assets
+GET     /assets/*file                        controllers.Assets.versioned(path="/public", file: Asset)
