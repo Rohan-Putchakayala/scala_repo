@@ -12,18 +12,18 @@ object Pipeline2_KeyspacesToParquet {
       // ----------------------------
       // Cassandra (Amazon Keyspaces)
       // ----------------------------
-      .config("spark.cassandra.connection.host", "cassandra.us-east-1.amazonaws.com")
+      .config("spark.cassandra.connection.host", "DUMMY")
       .config("spark.cassandra.connection.port", "9142")
       .config("spark.cassandra.connection.ssl.enabled", "true")
-      .config("spark.cassandra.auth.username", "rohan_payoda_aws-at-600222957365")
-      .config("spark.cassandra.auth.password", "R6KLjkT/fYKVHPFfYIIksjlaP2B6skyZZI/Aeox10IpSH9LJ0kl7/1Tsz3o=")
+      .config("spark.cassandra.auth.username", "DUMMY")
+      .config("spark.cassandra.auth.password", "DUMMY")
 
       // ----------------------------
       // S3 CONFIG (ap-south-2 bucket)
       // ----------------------------
       // IAM credentials
-      .config("spark.hadoop.fs.s3a.access.key", "AKIAYXQATP42TY47RN7C")
-      .config("spark.hadoop.fs.s3a.secret.key", "768lKIISyX7BQF/QUwZUpH6mq04NIsMIFLGfzMg0")
+      .config("spark.hadoop.fs.s3a.access.key", "DUMMY")
+      .config("spark.hadoop.fs.s3a.secret.key", "DUMMY")
 
       // Correct region + endpoint
       .config("spark.hadoop.fs.s3a.region", "ap-south-2")

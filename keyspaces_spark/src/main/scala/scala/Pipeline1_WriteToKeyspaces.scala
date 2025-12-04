@@ -8,20 +8,20 @@ object Pipeline1_WriteToKeyspaces {
     val spark = SparkSession.builder()
       .appName("Pipeline1_RDS_to_Keyspaces")
       .master("local[*]")
-      .config("spark.cassandra.connection.host", "cassandra.us-east-1.amazonaws.com")
+      .config("spark.cassandra.connection.host", "DUMMY")
       .config("spark.cassandra.connection.port", "9142")
       .config("spark.cassandra.connection.ssl.enabled", "true")
       // Use secrets managers / IAM in prod; placeholders here:
-      .config("spark.cassandra.auth.username", "rohan_payoda_aws-at-600222957365")
-      .config("spark.cassandra.auth.password", "R6KLjkT/fYKVHPFfYIIksjlaP2B6skyZZI/Aeox10IpSH9LJ0kl7/1Tsz3o=")
+      .config("spark.cassandra.auth.username", "DUMMY")
+      .config("spark.cassandra.auth.password", "DUMMY")
       .getOrCreate()
 
     import spark.implicits._
 
-    val jdbcUrl = "jdbc:mysql://database-1.cqr2ksiuua6t.us-east-1.rds.amazonaws.com:3306/retail_db?useSSL=true"
+    val jdbcUrl = "jdbc:mysql://DUMMY"
     val jdbcProps = new java.util.Properties()
-    jdbcProps.setProperty("user", "admin")
-    jdbcProps.setProperty("password", "PoiuyT2002")
+    jdbcProps.setProperty("user", "DUMMY")
+    jdbcProps.setProperty("password", "DUMMY")
     jdbcProps.setProperty("driver", "com.mysql.cj.jdbc.Driver")
 
     val customersDF = spark.read.jdbc(jdbcUrl, "customers", jdbcProps)
