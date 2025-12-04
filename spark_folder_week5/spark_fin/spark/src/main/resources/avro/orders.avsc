@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "name": "OrderRecord",
+  "namespace": "com.retail",
+  "fields": [
+    { "name": "order_id", "type": "int" },
+    { "name": "customer_id", "type": "int" },
+    { "name": "amount", "type": "double" },
+    { "name": "created_at", "type": "string" }
+  ]
+}

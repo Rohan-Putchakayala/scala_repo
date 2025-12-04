@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <option name="separateProdTestSources" value="true" />
+    <profile name="sbt 1" modules="DataEngineeringHandsonSet3,DataEngineeringHandsonSet3.main,DataEngineeringHandsonSet3.test,aws-keyspaces-spark-project,aws-keyspaces-spark-project.main,aws-keyspaces-spark-project.test,keyspaces_spark,keyspaces_spark.main,keyspaces_spark.test,keyspaces_spark_31,keyspaces_spark_31.main,keyspaces_spark_31.test" />
+  </component>
+</project>
