@@ -6,6 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/../../.bloop" />
       <excludeFolder url="file://$MODULE_DIR$/../../.bsp" />
     </content>
+    <orderEntry type="jdk" jdkName="homebrew-11" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

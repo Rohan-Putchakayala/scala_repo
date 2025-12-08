@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-spark/spark-kafka-protobuf.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-spark/spark-kafka-protobuf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-spark/spark-kafka-protobuf.main.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-spark/spark-kafka-protobuf.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-spark/spark-kafka-protobuf.spark-kafka-protobuf-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-spark/spark-kafka-protobuf.spark-kafka-protobuf-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-spark/spark-kafka-protobuf.test.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-spark/spark-kafka-protobuf.test.iml" />
+    </modules>
+  </component>
+</project>

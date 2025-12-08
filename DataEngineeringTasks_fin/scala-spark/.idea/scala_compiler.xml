@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <option name="separateProdTestSources" value="true" />
+    <profile name="sbt 1" modules="scala-spark_2317,scala-spark_2317.main,scala-spark_2317.test,spark-kafka-protobuf,spark-kafka-protobuf.main,spark-kafka-protobuf.test" />
+  </component>
+</project>
