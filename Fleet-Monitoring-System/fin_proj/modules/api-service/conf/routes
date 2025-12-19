@@ -1,0 +1,26 @@
+GET     /fleets                           controllers.FleetController.getFleets
+GET     /fleets/:id                       controllers.FleetController.getFleet(id: Int)
+
+GET     /fleets/:fleetId/recent-readings  controllers.TelemetryController.recentReadings(fleetId: Int, limit: Int ?= 50)
+GET     /fleets/:fleetId/vehicles/:vehicleId/readings  controllers.TelemetryController.vehicleReadings(fleetId: Int, vehicleId: String, limit: Int ?= 20)
+
+GET     /fleets/:fleetId/summary/:date    controllers.SummaryController.getFleetSummary(fleetId: Int, date: String)
+
+# Pipeline4 Dashboard Reports (from protobuf)
+GET     /fleet/:id/dailySummary           controllers.DashboardController.getFleetDailySummary(id: Int, date: Option[String])
+
+# S3-based hourly summaries (24 records per day per fleet)
+GET     /s3/fleets/:fleetId/hourly/:date  controllers.S3SummaryController.getFleetHourlySummaries(fleetId: Int, date: String)
+GET     /s3/summaries/:date               controllers.S3SummaryController.getAllFleetsHourlySummaries(date: String)
+
+# Fast S3 summaries (MySQL-based, ~2-5s)
+GET     /s3/fast/fleets/:fleetId/:date    controllers.FastS3SummaryController.getFleetHourlySummariesFast(fleetId: Int, date: String)
+GET     /s3/fast/summaries/:date          controllers.FastS3SummaryController.getAllFleetsSummariesFast(date: String)
+
+# Ultra Fast S3 summaries (in-memory, <1s)
+GET     /s3/ultra/fleets/:fleetId/:date   controllers.UltraFastS3Controller.getFleetHourlySummariesUltraFast(fleetId: Int, date: String)
+GET     /s3/ultra/summaries/:date         controllers.UltraFastS3Controller.getAllFleetsSummariesUltraFast(date: String)
+
+# Mock S3 summaries (for testing when S3 is slow)
+GET     /s3/mock/fleets/:fleetId/:date    controllers.MockS3Controller.getMockFleetHourlySummaries(fleetId: Int, date: String)
+GET     /s3/mock/summaries/:date          controllers.MockS3Controller.getMockAllFleetsSummaries(date: String)
